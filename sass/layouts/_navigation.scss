@@ -1,0 +1,22 @@
+.navigation {
+  @include centreflex($jc: space-between);
+
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.nav-list {
+  display: flex;
+
+  &-item {
+    position: relative;
+  }
+
+  &-item:not(last-child) {
+    margin-right: 50px;
+  }
+}
+
+.link-list {
+  display: flex;
+}
