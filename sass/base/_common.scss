@@ -45,8 +45,10 @@ body {
 }
 
 section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  @include for-size(desktop) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .section-title {
@@ -57,6 +59,10 @@ section {
   letter-spacing: 0.03em;
   text-align: center;
   color: $dark-text-color;
+
+  @include for-size(desktop) {
+    font-size: 36px;
+  }
 }
 
 .main-text {

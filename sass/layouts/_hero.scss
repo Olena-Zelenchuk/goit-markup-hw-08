@@ -10,6 +10,11 @@
     ),
     url("../img/hero.jpg");
   background-size: cover;
+
+  @include for-size(phone-only) {
+    margin-bottom: 60px;
+    padding: 130px 0;
+  }
 }
 
 .hero-title {
