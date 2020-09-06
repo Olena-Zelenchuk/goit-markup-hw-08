@@ -1,8 +1,13 @@
 .navigation {
   //   // @include centreflex($jc: space-between);
 
-  padding-top: 24px;
-  padding-bottom: 24px;
+  // padding-top: 24px;
+  // padding-bottom: 24px;
+
+  @include for-size(phone-only) {
+    padding-top: 18px;
+    padding-bottom: 18px;
+  }
 }
 
 // .nav-list {

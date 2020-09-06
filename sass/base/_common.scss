@@ -52,13 +52,18 @@ section {
 }
 
 .section-title {
-  margin-bottom: 50px;
+  // margin-bottom: 50px;
   font-weight: 700;
   font-size: 28px;
   line-height: 1.167;
   letter-spacing: 0.03em;
   text-align: center;
   color: $dark-text-color;
+
+  @include for-size(phone-only) {
+    padding-top: 65px;
+    padding-bottom: 35px;
+  }
 
   @include for-size(desktop) {
     font-size: 36px;
