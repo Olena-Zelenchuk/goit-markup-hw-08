@@ -321,29 +321,11 @@ body {
 }
 
 .container {
-  width: 100%;
+  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-}
-
-@media (min-width: 480px) {
-  .container {
-    width: 480px;
-  }
-}
-
-@media (min-width: 768px) {
-  .container {
-    width: 768px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .container {
-    width: 1200px;
-  }
 }
 
 .pf-container {
@@ -389,7 +371,7 @@ p {
   font-family: Raleway, sans-serif;
   font-style: normal;
   font-weight: bold;
-  font-size: 24px;
+  font-size: 26px;
   line-height: 1.192;
   letter-spacing: 0.03em;
   text-decoration: none;
@@ -728,12 +710,32 @@ p {
 }
 
 .header-page {
+  display: flex;
   border: 1px solid #ececec;
 }
 
 .navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding-top: 24px;
   padding-bottom: 24px;
+}
+
+.nav-list {
+  display: flex;
+}
+
+.nav-list-item {
+  position: relative;
+}
+
+.nav-list-item:not(last-child) {
+  margin-right: 50px;
+}
+
+.link-list {
+  display: flex;
 }
 
 .contacts-link {
@@ -765,8 +767,10 @@ p {
 }
 
 .section-hero {
+  padding: 200px 0;
   text-align: center;
   vertical-align: middle;
+  height: 600px;
   background-color: rgba(47, 48, 58, 0.8);
   background-image: linear-gradient(rgba(0, 0, 0, 0.4) 50%, rgba(0, 0, 0, 0.4) 50%), url("../img/hero.jpg");
   background-size: cover;
@@ -776,7 +780,7 @@ p {
   padding-top: 0px;
   margin-top: 0;
   margin-bottom: 30px;
-  font-size: 26px;
+  font-size: 44px;
   font-weight: 900;
   line-height: 1.364;
   letter-spacing: 0.06em;
@@ -788,6 +792,7 @@ p {
 }
 
 .benefits-list {
+  display: flex;
   align-items: baseline;
 }
 
@@ -836,6 +841,41 @@ p {
   line-height: 1.143;
   letter-spacing: 0.03em;
   color: #212121;
+}
+
+.what-we-do .section-title {
+  padding-top: 0px;
+}
+
+.what-we-do-list {
+  display: flex;
+}
+
+.what-we-do-item {
+  position: relative;
+  width: calc((100% - 30px * 2) / 3);
+  height: 294px;
+}
+
+.what-we-do-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.what-we-do-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 370px;
+  height: 70px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.143;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  background: rgba(47, 48, 58, 0.8);
 }
 
 .our-team {
@@ -904,7 +944,7 @@ p {
 }
 
 .logo-list {
-  display: flex;
+  display: inline-flex;
   justify-content: center;
   align-items: center;
   width: 170px;

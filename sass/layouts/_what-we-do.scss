@@ -1,35 +1,35 @@
-.what-we-do .section-title {
-  padding-top: 0px;
-}
+// .what-we-do .section-title {
+//   padding-top: 0px;
+// }
 
-.what-we-do-list {
-  display: flex;
-}
+// .what-we-do-list {
+//   display: flex;
+// }
 
-.what-we-do-item {
-  position: relative;
-  width: calc((100% - 30px * 2) / 3);
-  height: 294px;
+// .what-we-do-item {
+//   position: relative;
+//   width: calc((100% - 30px * 2) / 3);
+//   height: 294px;
 
-  &:not(:last-child) {
-    margin-right: 30px;
-  }
-}
+//   &:not(:last-child) {
+//     margin-right: 30px;
+//   }
+// }
 
-.what-we-do-text {
-  @include centreflex();
+// .what-we-do-text {
+//   @include centreflex();
 
-  width: 370px;
-  height: 70px;
+//   width: 370px;
+//   height: 70px;
 
-  position: absolute;
-  left: 0;
-  bottom: 0;
+//   position: absolute;
+//   left: 0;
+//   bottom: 0;
 
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.143;
-  letter-spacing: 0.03em;
-  color: $main-white-color;
-  background: rgba(47, 48, 58, 0.8);
-}
+//   font-weight: 700;
+//   font-size: 14px;
+//   line-height: 1.143;
+//   letter-spacing: 0.03em;
+//   color: $main-white-color;
+//   background: rgba(47, 48, 58, 0.8);
+// }
