@@ -21,6 +21,12 @@
     }
   }
 
+  @include for-size(tablet-portrait) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+
   // &:not(:last-child) {
   //   margin-right: 30px;
   //   padding-bottom: 30px;
@@ -62,6 +68,11 @@
     margin-top: 16px;
 
     @include for-size(phone-only) {
+      justify-content: center;
+      padding-bottom: 16px;
+    }
+
+    @include for-size(tablet-portrait) {
       justify-content: center;
       padding-bottom: 16px;
     }

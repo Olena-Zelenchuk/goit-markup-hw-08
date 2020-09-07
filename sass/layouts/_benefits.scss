@@ -1,10 +1,6 @@
 .benefits {
   padding-bottom: 0;
 
-  @include for-size(phone-only) {
-    margin-bottom: 60px;
-  }
-
   // &-list {
   //   // display: flex;
   //   align-items: baseline;
@@ -45,6 +41,10 @@
   background-position: center;
 
   @include for-size(phone-only) {
+    width: 100%;
+  }
+
+  @include for-size(tablet-portrait) {
     width: 100%;
   }
 }

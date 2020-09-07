@@ -1,6 +1,15 @@
 .contacts-link {
-  display: inline-flex;
-  align-items: center;
+  // display: inline-flex;
+  // align-items: center;
+
+  @include for-size(phone-only) {
+    display: block;
+    margin: 20px 0;
+  }
+
+  @include for-size(tablet-portrait) {
+    display: block;
+  }
 
   font-style: normal;
   font-weight: 500;

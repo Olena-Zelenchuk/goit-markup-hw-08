@@ -6,6 +6,10 @@
     @include for-size(phone-only) {
       margin-top: 20px;
     }
+
+    @include for-size(tablet-portrait) {
+      margin-top: 20px;
+    }
   }
 }
 

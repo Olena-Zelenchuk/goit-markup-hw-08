@@ -8,20 +8,35 @@
     padding-top: 18px;
     padding-bottom: 18px;
   }
+
+  @include for-size(tablet-portrait) {
+    padding-top: 18px;
+    padding-bottom: 18px;
+  }
 }
 
-// .nav-list {
-// //   // display: flex;
+.nav-list {
+  // display: flex;
 
-// //   &-item {
-// //     position: relative;
-// //   }
+  @include for-size(phone-only) {
+    display: block;
+  }
 
-// //   &-item:not(last-child) {
-// //     margin-right: 50px;
-// //   }
-// // }
+  @include for-size(tablet-portrait) {
+    display: block;
+  }
 
-// // .link-list {
-// //   // display: flex;
-// // }
+  &-item {
+    position: relative;
+  }
+
+  &-item:not(last-child) {
+    @include for-size(desktop) {
+      margin-right: 50px;
+    }
+  }
+}
+
+// .link-list {
+//   // display: flex;
+// }

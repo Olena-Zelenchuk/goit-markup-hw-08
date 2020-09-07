@@ -7,6 +7,10 @@
     @include for-size(phone-only) {
       text-align: center;
     }
+
+    @include for-size(tablet-portrait) {
+      text-align: center;
+    }
   }
 
   // &-container {
@@ -35,10 +39,18 @@
     padding-top: 60px;
   }
 
+  @include for-size(tablet-portrait) {
+    padding-top: 60px;
+  }
+
   &-list {
     display: flex;
 
     @include for-size(phone-only) {
+      justify-content: center;
+    }
+
+    @include for-size(tablet-portrait) {
       justify-content: center;
     }
 
@@ -73,6 +85,11 @@
   color: $main-white-color;
 
   @include for-size(phone-only) {
+    padding-top: 60px;
+    text-align: center;
+  }
+
+  @include for-size(tablet-portrait) {
     padding-top: 60px;
     text-align: center;
   }
