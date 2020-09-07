@@ -3,18 +3,24 @@
   padding-bottom: 60px;
   background: #2f303a;
 
-  &-container {
-    // display: flex;
-    align-items: baseline;
-  }
-
   &-div {
-    width: calc((50% - 30px) / 2);
-
-    &-div:not(:last-child) {
-      margin-right: 30px;
+    @include for-size(phone-only) {
+      text-align: center;
     }
   }
+
+  // &-container {
+  //   // display: flex;
+  //   align-items: baseline;
+  // }
+
+  // &-div {
+  //   width: calc((50% - 30px) / 2);
+
+  //   &-div:not(:last-child) {
+  //     margin-right: 30px;
+  //   }
+  // }
 }
 
 .join-us {
@@ -25,8 +31,17 @@
 
   color: $main-white-color;
 
+  @include for-size(phone-only) {
+    padding-top: 60px;
+  }
+
   &-list {
     display: flex;
+
+    @include for-size(phone-only) {
+      justify-content: center;
+    }
+
     margin-top: 20px;
   }
 }
@@ -56,6 +71,11 @@
   line-height: 1.143;
   letter-spacing: 0.03em;
   color: $main-white-color;
+
+  @include for-size(phone-only) {
+    padding-top: 60px;
+    text-align: center;
+  }
 }
 
 .item-instagram {

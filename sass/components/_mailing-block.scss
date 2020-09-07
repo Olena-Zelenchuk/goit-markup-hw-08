@@ -1,6 +1,12 @@
 .mailing-block {
   // display: flex;
   margin-top: 20px;
+
+  & .btn {
+    @include for-size(phone-only) {
+      margin-top: 20px;
+    }
+  }
 }
 
 .mailing-block {
