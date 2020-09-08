@@ -300,20 +300,6 @@ summary {
   display: list-item;
 }
 
-.bg-menu {
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 1;
-  padding: 60px 0;
-  text-align: center;
-  width: 100%;
-  background-color: #fff;
-  border-top: 1px solid #ececec;
-  transform: translateY(60px);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
 html {
   box-sizing: border-box;
 }
@@ -571,19 +557,21 @@ p {
   left: 0;
   right: 0;
   bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
   opacity: 1;
+  overflow-y: scroll;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 @media (max-width: 479px) {
   .backdrop {
-    background-color: transparent;
+    padding: 94px 15px;
   }
 }
 
 @media (min-width: 480px) {
   .backdrop {
-    background-color: transparent;
+    padding: 94px 15px;
   }
 }
 
@@ -597,22 +585,26 @@ p {
 }
 
 .modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
+  position: relative;
   padding: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   text-align: center;
-  flex-direction: column;
-  width: 528px;
-  height: 581px;
+  width: 100%;
+  height: 609px;
   background-color: #fffffa;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-  transform: translate(-50%, -50%) scale(1);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media (min-width: 1200px) {
+  .modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
 }
 
 .modal-title {
@@ -664,7 +656,7 @@ p {
 }
 
 .form {
-  width: 448px;
+  width: 100%;
 }
 
 .form-logo {
@@ -748,9 +740,6 @@ p {
 
 .form-field-agree {
   position: relative;
-  display: flex;
-  justify-content: start;
-  align-items: center;
   width: 100%;
   margin-top: 30px;
   margin-bottom: 35px;
@@ -758,10 +747,17 @@ p {
   padding-right: 10px;
 }
 
+@media (min-width: 1200px) {
+  .form-field-agree {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+  }
+}
+
 .form-field-agree-label {
-  display: flex;
-  align-items: center;
   padding-left: 20px;
+  font-size: 12px;
 }
 
 .form-field-agree-input {
@@ -773,7 +769,7 @@ p {
 
 .form-field-agree .checked-icon {
   position: absolute;
-  transform: translateX(-20px);
+  transform: translate(-20px, 4px);
   display: inline-block;
   width: 16px;
   height: 15px;
@@ -783,13 +779,18 @@ p {
 }
 
 .form-field-agree .form-field-link {
-  margin-left: 5px;
   font-style: normal;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.7;
   letter-spacing: 0.03em;
   color: #2196f3;
+}
+
+@media (min-width: 1200px) {
+  .form-field-agree .form-field-link {
+    font-size: 14px;
+  }
 }
 
 .form-field-agree-input:checked + .checked-icon {
