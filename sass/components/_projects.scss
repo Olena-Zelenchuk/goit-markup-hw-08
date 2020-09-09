@@ -1,14 +1,23 @@
 .projects-list {
-  display: flex;
-  flex-wrap: wrap;
+  @include for-size(desktop) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .projects-list-item {
-  width: calc((100% - 30px * 2) / 3);
-  margin-right: 30px;
-  justify-content: center;
-
+  width: 100%;
   box-shadow: none;
+
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
+
+  @include for-size(desktop) {
+    width: calc((100% - 30px * 2) / 3);
+    margin-right: 30px;
+    justify-content: center;
+  }
 
   &:hover,
   &:focus {
@@ -22,7 +31,9 @@
 }
 
 .projects-list-item:nth-child(n + 4) {
-  margin-top: 30px;
+  @include for-size(desktop) {
+    margin-top: 30px;
+  }
 }
 
 .projects-list-item a {

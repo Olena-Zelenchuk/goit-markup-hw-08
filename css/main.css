@@ -362,7 +362,13 @@ body {
 }
 
 .pf-container {
-  margin-bottom: 50px;
+  margin-bottom: 40px;
+}
+
+@media (min-width: 1200px) {
+  .pf-container {
+    margin-bottom: 50px;
+  }
 }
 
 @media (max-width: 479px) {

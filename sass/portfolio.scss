@@ -1,6 +1,9 @@
 @import "./utils/variables";
+@import "./utils/mixin";
 @import "./base/fonts";
+@import "./utils/centreflex";
 @import "./base/normalize";
+@import "./components/bg-menu";
 @import "./base/common";
 @import "./components/logo";
 @import "./components/menu";
