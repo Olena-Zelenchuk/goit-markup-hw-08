@@ -7,11 +7,17 @@
   @include for-size(phone-only) {
     padding-top: 18px;
     padding-bottom: 18px;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #ececec;
   }
 
   @include for-size(tablet-portrait) {
     padding-top: 18px;
     padding-bottom: 18px;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #ececec;
   }
 }
 

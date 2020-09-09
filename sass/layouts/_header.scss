@@ -1,6 +1,8 @@
 .header-page {
+  position: relative;
+
   // display: flex;
-  border: 1px solid #ececec;
+  // border: 1px solid #ececec;
 
   @include for-size(tablet-portrait) {
     position: relative;
