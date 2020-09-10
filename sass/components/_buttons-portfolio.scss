@@ -1,17 +1,19 @@
 .button-list {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
 
   @include for-size(tablet-landscape) {
     justify-content: center;
   }
 }
 
-@media screen and (max-width: 767px) {
-  .button-list {
-    flex-wrap: wrap;
-    justify-content: start;
-  }
-}
+// @media screen and (max-width: 767px) {
+//   .button-list {
+//     flex-wrap: wrap;
+//     justify-content: start;
+//   }
+// }
 
 .button-list-item:not(:last-child) {
   margin-right: 8px;

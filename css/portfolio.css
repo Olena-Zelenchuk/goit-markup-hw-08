@@ -432,7 +432,7 @@ body {
 
 @media (min-width: 1200px) {
   .section-title {
-    margin-bottom: 50px;
+    padding-bottom: 60px;
     font-size: 36px;
   }
 }
@@ -547,18 +547,13 @@ p {
 
 .button-list {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
 }
 
 @media (min-width: 768px) {
   .button-list {
     justify-content: center;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .button-list {
-    flex-wrap: wrap;
-    justify-content: start;
   }
 }
 
@@ -635,28 +630,27 @@ p {
   }
 }
 
+@media (min-width: 1200px) {
+  .projects-list-item:nth-child(n + 4) {
+    margin-top: 30px;
+  }
+}
+
 @media (min-width: 768px) {
   .projects-list-item {
-    width: calc(100% / 2);
+    width: calc((100% - 30px) / 2);
   }
 }
 
 @media (min-width: 1200px) {
   .projects-list-item {
     width: calc((100% - 30px * 2) / 3);
-    margin-right: 30px;
     justify-content: center;
   }
 }
 
 .projects-list-item:hover, .projects-list-item:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-
-@media (min-width: 1200px) {
-  .projects-list-item:nth-child(n + 4) {
-    margin-top: 30px;
-  }
 }
 
 .projects-list-item a {
@@ -1148,8 +1142,6 @@ p {
 }
 
 .footer {
-  padding-top: 60px;
-  padding-bottom: 60px;
   background: #2f303a;
 }
 
@@ -1162,6 +1154,32 @@ p {
 @media (min-width: 480px) {
   .footer-div {
     text-align: center;
+  }
+}
+
+@media (min-width: 1200px) {
+  .footer-div {
+    text-align: left;
+  }
+  .footer-div-div:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+@media (min-width: 768px) {
+  .tablet-footer {
+    display: flex;
+    justify-content: space-around;
   }
 }
 
@@ -1182,6 +1200,12 @@ p {
 @media (min-width: 480px) {
   .join-us {
     padding-top: 60px;
+  }
+}
+
+@media (min-width: 768px) {
+  .join-us {
+    padding-top: 0;
   }
 }
 
@@ -1238,6 +1262,12 @@ p {
   .mailing {
     padding-top: 60px;
     text-align: center;
+  }
+}
+
+@media (min-width: 1200px) {
+  .mailing {
+    padding-top: 0;
   }
 }
 

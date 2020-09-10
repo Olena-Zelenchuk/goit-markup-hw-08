@@ -1,6 +1,4 @@
 .footer {
-  padding-top: 60px;
-  padding-bottom: 60px;
   background: #2f303a;
 
   &-div {
@@ -11,20 +9,41 @@
     @include for-size(tablet-portrait) {
       text-align: center;
     }
+
+    @include for-size(desktop) {
+      text-align: left;
+
+      &-div:not(:last-child) {
+        margin-right: 30px;
+      }
+    }
   }
 
-  // &-container {
-  //   // display: flex;
-  //   align-items: baseline;
-  // }
+  @include for-size(desktop) {
+    &-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
 
-  // &-div {
-  //   width: calc((50% - 30px) / 2);
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
 
-  //   &-div:not(:last-child) {
-  //     margin-right: 30px;
-  //   }
-  // }
+    // &-div {
+    //   width: calc((50% - 30px) / 2);
+
+    //   &-div:not(:last-child) {
+    //     margin-right: 30px;
+    //   }
+    // }
+  }
+}
+
+.tablet-footer {
+  @include for-size(tablet-landscape) {
+    display: flex;
+    justify-content: space-around;
+  }
 }
 
 .join-us {
@@ -41,6 +60,10 @@
 
   @include for-size(tablet-portrait) {
     padding-top: 60px;
+  }
+
+  @include for-size(tablet-landscape) {
+    padding-top: 0;
   }
 
   &-list {
@@ -92,6 +115,10 @@
   @include for-size(tablet-portrait) {
     padding-top: 60px;
     text-align: center;
+  }
+
+  @include for-size(desktop) {
+    padding-top: 0;
   }
 }
 

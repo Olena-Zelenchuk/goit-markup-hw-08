@@ -2,12 +2,17 @@
   background-color: #f5f4fa;
 }
 
-// .team-list {
+.team-list {
+  @include for-size(tablet-landscape) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
 //   display: flex;
 // }
 
 .person-list {
-  // width: calc((100% - 30px * 3) / 4);
   background-color: $main-white-color;
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -27,10 +32,29 @@
     }
   }
 
-  // &:not(:last-child) {
-  //   margin-right: 30px;
-  //   padding-bottom: 30px;
-  // }
+  @include for-size(tablet-landscape) {
+    &:nth-child(2n + 1) {
+      margin-right: 30px;
+    }
+
+    &:nth-child(n + 3) {
+      margin-bottom: 0;
+    }
+  }
+
+  @include for-size(tablet-landscape) {
+    width: calc((100% - 30px) / 2);
+  }
+
+  @include for-size(desktop) {
+    width: calc((100% - 30px * 3) / 4);
+    padding-bottom: 30px;
+
+    &:not(:last-child) {
+      margin-right: 30px;
+      margin-bottom: 0;
+    }
+  }
 }
 
 .person-list .names {
