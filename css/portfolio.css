@@ -322,6 +322,12 @@ summary {
   }
 }
 
+@media (min-width: 1200px) {
+  .bg-menu {
+    margin-left: 90px;
+  }
+}
+
 .bg-menu.is-open {
   display: block;
 }
@@ -819,6 +825,18 @@ p {
   }
 }
 
+@media (min-width: 1200px) {
+  .mailing-block .btn {
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .mailing-block {
+    display: flex;
+  }
+}
+
 .mailing-block .btn::after {
   content: " ";
   background-image: url("../img/icons/sendicon.svg");
@@ -1088,6 +1106,12 @@ p {
   }
 }
 
+@media (min-width: 1200px) {
+  .link-list {
+    display: flex;
+  }
+}
+
 .contacts-link {
   font-style: normal;
   font-weight: 500;
@@ -1115,23 +1139,19 @@ p {
 @media (min-width: 768px) {
   .contacts-link {
     display: block;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .contacts-link:not(last-child) {
+    margin-right: 30px;
   }
 }
 
 .contacts-link:hover, .contacts-link:focus {
   color: #2196f3;
-}
-
-.contacts-link:not(last-child) {
-  margin-right: 30px;
-}
-
-@media (min-width: 768px) {
-  .contacts-link:not(last-child) {
-    display: block;
-    margin-right: 0;
-    margin-bottom: 10px;
-  }
 }
 
 .mail-link {
@@ -1143,6 +1163,21 @@ p {
 
 .footer {
   background: #2f303a;
+}
+
+.footer-container {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+@media (min-width: 1200px) {
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
 
 @media (max-width: 479px) {
@@ -1160,19 +1195,7 @@ p {
 @media (min-width: 1200px) {
   .footer-div {
     text-align: left;
-  }
-  .footer-div-div:not(:last-child) {
-    margin-right: 30px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .footer-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    padding-top: 60px;
-    padding-bottom: 60px;
+    margin-right: 90px;
   }
 }
 
@@ -1206,6 +1229,12 @@ p {
 @media (min-width: 768px) {
   .join-us {
     padding-top: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .join-us {
+    padding-top: 10px;
   }
 }
 
@@ -1260,13 +1289,18 @@ p {
 
 @media (min-width: 480px) {
   .mailing {
+    width: 80%;
     padding-top: 60px;
     text-align: center;
+    margin-right: auto;
+    margin-left: auto;
   }
 }
 
 @media (min-width: 1200px) {
   .mailing {
+    width: calc((100% - 30px) / 2);
+    text-align: left;
     padding-top: 0;
   }
 }

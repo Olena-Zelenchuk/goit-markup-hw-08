@@ -1,6 +1,20 @@
 .footer {
   background: #2f303a;
 
+  &-container {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    @include for-size(desktop) {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
+  }
+
   &-div {
     @include for-size(phone-only) {
       text-align: center;
@@ -12,31 +26,20 @@
 
     @include for-size(desktop) {
       text-align: left;
-
-      &-div:not(:last-child) {
-        margin-right: 30px;
-      }
+      margin-right: 90px;
     }
   }
 
-  @include for-size(desktop) {
-    &-container {
-      display: flex;
-      justify-content: space-between;
-      align-items: baseline;
+  // @include for-size(desktop) {
+  //   &-container {
+  //     display: flex;
+  //     justify-content: space-between;
+  //     align-items: baseline;
 
-      padding-top: 60px;
-      padding-bottom: 60px;
-    }
-
-    // &-div {
-    //   width: calc((50% - 30px) / 2);
-
-    //   &-div:not(:last-child) {
-    //     margin-right: 30px;
-    //   }
-    // }
-  }
+  //     padding-top: 60px;
+  //     padding-bottom: 60px;
+  //   }
+  // }
 }
 
 .tablet-footer {
@@ -64,6 +67,10 @@
 
   @include for-size(tablet-landscape) {
     padding-top: 0;
+  }
+
+  @include for-size(desktop) {
+    padding-top: 10px;
   }
 
   &-list {
@@ -113,11 +120,16 @@
   }
 
   @include for-size(tablet-portrait) {
+    width: 80%;
     padding-top: 60px;
     text-align: center;
+    margin-right: auto;
+    margin-left: auto;
   }
 
   @include for-size(desktop) {
+    width: calc((100% - 30px) / 2);
+    text-align: left;
     padding-top: 0;
   }
 }

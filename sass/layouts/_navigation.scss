@@ -59,6 +59,10 @@
   @include for-size(tablet-landscape) {
     text-align: left;
   }
+
+  @include for-size(desktop) {
+    display: flex;
+  }
 }
 // .link-list {
 //   // display: flex;

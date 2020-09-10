@@ -13,6 +13,14 @@
 
   @include for-size(tablet-landscape) {
     display: block;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  @include for-size(desktop) {
+    &:not(last-child) {
+      margin-right: 30px;
+    }
   }
 
   font-style: normal;
@@ -31,15 +39,15 @@
   }
 }
 
-.contacts-link:not(last-child) {
-  margin-right: 30px;
+// .contacts-link:not(last-child) {
+//   margin-right: 30px;
 
-  @include for-size(tablet-landscape) {
-    display: block;
-    margin-right: 0;
-    margin-bottom: 10px;
-  }
-}
+//   @include for-size(tablet-landscape) {
+//     display: block;
+//     margin-right: 0;
+//     margin-bottom: 10px;
+//   }
+// }
 
 .mail-link {
   display: inline-block;

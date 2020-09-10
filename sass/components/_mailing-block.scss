@@ -1,5 +1,5 @@
 .mailing-block {
-  // display: flex;
+  //
   margin-top: 20px;
 
   & .btn {
@@ -10,6 +10,14 @@
     @include for-size(tablet-portrait) {
       margin-top: 20px;
     }
+
+    @include for-size(desktop) {
+      margin-top: 0;
+    }
+  }
+
+  @include for-size(desktop) {
+    display: flex;
   }
 }
 

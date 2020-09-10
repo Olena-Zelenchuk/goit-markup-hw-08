@@ -25,6 +25,10 @@
     padding: 0;
     margin-left: 50px;
   }
+
+  @include for-size(desktop) {
+    margin-left: 90px;
+  }
 }
 .bg-menu.is-open {
   display: block;
