@@ -11,6 +11,10 @@
     display: block;
   }
 
+  @include for-size(tablet-landscape) {
+    display: block;
+  }
+
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -29,6 +33,12 @@
 
 .contacts-link:not(last-child) {
   margin-right: 30px;
+
+  @include for-size(tablet-landscape) {
+    display: block;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
 }
 
 .mail-link {

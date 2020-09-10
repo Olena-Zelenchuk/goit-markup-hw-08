@@ -1,15 +1,11 @@
 .navigation {
-  //   // @include centreflex($jc: space-between);
-
-  // padding-top: 24px;
-  // padding-bottom: 24px;
+  border-bottom: 1px solid #ececec;
 
   @include for-size(phone-only) {
     padding-top: 18px;
     padding-bottom: 18px;
     display: flex;
     justify-content: space-between;
-    border: 1px solid #ececec;
   }
 
   @include for-size(tablet-portrait) {
@@ -17,13 +13,19 @@
     padding-bottom: 18px;
     display: flex;
     justify-content: space-between;
-    border: 1px solid #ececec;
+  }
+
+  @include for-size(tablet-landscape) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
 }
 
 .nav-list {
-  // display: flex;
-
   @include for-size(phone-only) {
     display: block;
   }
@@ -32,8 +34,18 @@
     display: block;
   }
 
+  @include for-size(tablet-landscape) {
+    display: flex;
+  }
+
   &-item {
     position: relative;
+  }
+
+  &-item:not(:last-child) {
+    @include for-size(tablet-landscape) {
+      margin-right: 50px;
+    }
   }
 
   &-item:not(last-child) {
@@ -43,6 +55,11 @@
   }
 }
 
+.link-list {
+  @include for-size(tablet-landscape) {
+    text-align: left;
+  }
+}
 // .link-list {
 //   // display: flex;
 // }

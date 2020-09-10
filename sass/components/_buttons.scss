@@ -69,6 +69,10 @@
   &:focus {
     fill: $accent-color;
   }
+
+  @include for-size(tablet-landscape) {
+    display: none;
+  }
 }
 
 .icon-close {

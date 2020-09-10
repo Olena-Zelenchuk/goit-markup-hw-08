@@ -43,6 +43,10 @@ body {
 .pf-container {
   margin-bottom: 40px;
 
+  @include for-size(tablet-landscape) {
+    margin-bottom: 0;
+  }
+
   @include for-size(desktop) {
     margin-bottom: 50px;
   }

@@ -1,18 +1,19 @@
 .menu-link {
   display: block;
+  margin-bottom: 40px;
 
   @include for-size(phone-only) {
     position: relative;
-
-    margin-bottom: 40px;
     display: inline-block;
   }
 
   @include for-size(tablet-portrait) {
     position: relative;
-
-    margin-bottom: 40px;
     display: inline-block;
+  }
+
+  @include for-size(tablet-landscape) {
+    margin-bottom: 0;
   }
 
   font-style: normal;
@@ -41,6 +42,10 @@
   position: absolute;
   left: 0;
   bottom: -10px;
+
+  @include for-size(tablet-landscape) {
+    bottom: -50px;
+  }
 
   display: block;
   width: 100%;
