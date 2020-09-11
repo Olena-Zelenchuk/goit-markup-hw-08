@@ -551,6 +551,12 @@ p {
   }
 }
 
+@media (min-width: 1200px) {
+  .current::after {
+    bottom: -38px;
+  }
+}
+
 .btn {
   display: inline-flex;
   padding: 10px 32px;
@@ -698,6 +704,7 @@ p {
     position: absolute;
     top: 50%;
     left: 50%;
+    width: 40%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -870,6 +877,13 @@ p {
 .form-field-agree-label {
   padding-left: 20px;
   font-size: 12px;
+}
+
+@media (min-width: 1200px) {
+  .form-field-agree-label {
+    font-size: 14px;
+    margin-right: 10px;
+  }
 }
 
 .form-field-agree-input {

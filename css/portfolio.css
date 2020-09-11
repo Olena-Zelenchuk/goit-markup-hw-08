@@ -551,6 +551,12 @@ p {
   }
 }
 
+@media (min-width: 1200px) {
+  .current::after {
+    bottom: -38px;
+  }
+}
+
 .button-list {
   display: flex;
   flex-wrap: wrap;
@@ -954,6 +960,13 @@ p {
 .form-field-agree-label {
   padding-left: 20px;
   font-size: 12px;
+}
+
+@media (min-width: 1200px) {
+  .form-field-agree-label {
+    font-size: 14px;
+    margin-right: 10px;
+  }
 }
 
 .form-field-agree-input {

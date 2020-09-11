@@ -47,6 +47,10 @@
     bottom: -50px;
   }
 
+  @include for-size(desktop) {
+    bottom: -38px;
+  }
+
   display: block;
   width: 100%;
   height: 4px;
