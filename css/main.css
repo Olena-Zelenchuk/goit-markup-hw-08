@@ -1107,7 +1107,7 @@ img {
 @media (max-width: 479px) {
   .section-hero {
     padding: 130px 0;
-    background-image: url("../../img_respons/header/header_mob.jpg");
+    background-image: url("../img_respons/header/header_mob.jpg");
     background-size: cover;
   }
 }

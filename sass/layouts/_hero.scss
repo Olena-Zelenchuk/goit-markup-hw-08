@@ -11,7 +11,7 @@
   @include for-size(phone-only) {
     padding: 130px 0;
 
-    background-image: url("../../img_respons/header/header_mob.jpg");
+    background-image: url("../img_respons/header/header_mob.jpg");
     background-size: cover;
 
     @media screen and (min-device-pixel-ratio: 2),
