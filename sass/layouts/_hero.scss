@@ -1,22 +1,70 @@
 .section-hero {
-  // padding: 200px 0;
   text-align: center;
   vertical-align: middle;
-  // height: 600px;
+
   background-color: rgba(47, 48, 58, 0.8);
   background-image: linear-gradient(
-      rgba(0, 0, 0, 0.4) 50%,
-      rgba(0, 0, 0, 0.4) 50%
-    ),
-    url("../img/hero.jpg");
-  background-size: cover;
+    rgba(0, 0, 0, 0.4) 50%,
+    rgba(0, 0, 0, 0.4) 50%
+  );
 
   @include for-size(phone-only) {
     padding: 130px 0;
+
+    background-image: url("../../img_respons/header/header_mob.jpg");
+    background-size: cover;
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      .section-hero {
+        background-image: url("../../img_respons/header/header_mob@2x.jpg");
+      }
+    }
   }
 
   @include for-size(tablet-portrait) {
     padding: 130px 0;
+
+    background-image: url("../../img_respons/header/header_mob.jpg");
+    background-size: cover;
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      .section-hero {
+        background-image: url("../../img_respons/header/header_mob@2x.jpg");
+      }
+    }
+  }
+
+  @include for-size(tablet-landscape) {
+    background-image: url("../../img_respons/header/header_tab.jpg");
+    background-size: cover;
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      .section-hero {
+        background-image: url("../../img_respons/header/header_tab@2x.jpg");
+      }
+    }
+  }
+
+  @include for-size(desktop) {
+    height: 600px;
+    padding: 200px 0;
+
+    background-image: url("../../img_respons/header/header_des.jpg");
+    background-size: cover;
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      .section-hero {
+        background-image: url("../../img_respons/header/header_des@2x.jpg");
+      }
+    }
   }
 }
 
@@ -31,4 +79,8 @@
   letter-spacing: 0.06em;
 
   color: $main-white-color;
+
+  @include for-size(desktop) {
+    font-size: 44px;
+  }
 }

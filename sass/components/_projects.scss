@@ -14,8 +14,16 @@
   width: 100%;
   box-shadow: none;
 
+  @include for-size(desktop) {
+    margin-right: 30px;
+  }
+
   &:not(:last-child) {
     margin-bottom: 30px;
+
+    @include for-size(desktop) {
+      margin-bottom: 0;
+    }
   }
 
   &:nth-child(2n + 1) {

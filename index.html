@@ -121,11 +121,10 @@
           <h2 class="section-title">Чем мы занимаемся</h2>
           <ul class="list what-we-do-list">
             <li class="what-we-do-item">
-              <img
-                src="./img/desktop.jpg"
-                alt="Десктопные приложения"
-                width="370"
-              />
+              <img <!-- srcset="./img_respons/work-list/d-app/img.jpg" -- />
+              src="./img_respons/work-list/d-app/img.jpg" alt="Десктопные
+              приложения" width="370" />
+
               <p class="what-we-do-text">ДЕСКТОПНЫЕ ПРИЛОЖЕНИЯ</p>
             </li>
             <li class="what-we-do-item">
@@ -154,11 +153,36 @@
           <h2 class="section-title">Наша команда</h2>
           <ul class="list team-list">
             <li class="person-list">
-              <img
-                src="./img/demjanenko.jpg"
-                alt="Игорь Демьяненко"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./img_respons/team/demjanenko-desk/img.jpg    1x,
+                    ./img_respons/team/demjanenko-desk/img@2x.jpg 2x
+                  "
+                  media="(min-widht: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./img_respons/team/demjanenko-tab/team1.jpg    1x,
+                    ./img_respons/team/demjanenko-tab/team1@2x.jpg 2x
+                  "
+                  media="(min-widht: 768px)"
+                />
+
+                <source
+                  srcset="
+                    ./img_respons/team/demjanenko-mob/img.jpg    1x,
+                    ./img_respons/team/demjanenko-mob/img@2x.jpg 2x
+                  "
+                  media="(max-widht: 767px)"
+                />
+                <img
+                  src="./img_respons/team/demjanenko-mob/img.jpg"
+                  alt="Игорь Демьяненко"
+                  width="450"
+                />
+              </picture>
+
               <h3 class="names">Игорь Демьяненко</h3>
               <p class="main-text">Product Designer</p>
               <ul class="list team-social-link-list">
@@ -209,7 +233,36 @@
               </ul>
             </li>
             <li class="person-list">
-              <img src="./img/repina.jpg" alt="Ольга Репина" width="270" />
+              <picture>
+                <source
+                  srcset="
+                    ./img_respons/team/repina-desk/img.jpg    1x,
+                    ./img_respons/team/repina-desk/img@2x.jpg 2x
+                  "
+                  media="(min-widht: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./img_respons/team/repina-tab/img.jpg    1x,
+                    ./img_respons/team/repina-tab/img@2x.jpg 2x
+                  "
+                  media="(min-widht: 768px)"
+                />
+
+                <source
+                  srcset="
+                    ./img_respons/team/repina-mob/img.jpg    1x,
+                    ./img_respons/team/repina-mob/img@2x.jpg 2x
+                  "
+                  media="(max-widht: 767px)"
+                />
+                <img
+                  src="./img_respons/team/repina-mob/img.jpg"
+                  alt="Ольга Репина"
+                  width="450"
+                />
+              </picture>
+
               <h3 class="names">Ольга Репина</h3>
               <p class="main-text">Frontend Developer</p>
               <ul class="list team-social-link-list">
@@ -261,7 +314,36 @@
             </li>
 
             <li class="person-list">
-              <img src="./img/tarasov.jpg" alt="Николай Тарасов" width="270" />
+              <picture>
+                <source
+                  srcset="
+                    ./img_respons/team/tarasov-desk/img.jpg    1x,
+                    ./img_respons/team/tarasov-desk/img@2x.jpg 2x
+                  "
+                  media="(min-widht: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./img_respons/team/tarasov-tab/img.jpg    1x,
+                    ./img_respons/team/tarasov-tab/img@2x.jpg 2x
+                  "
+                  media="(min-widht: 768px)"
+                />
+
+                <source
+                  srcset="
+                    ./img_respons/team/tarasov-mob/img.jpg    1x,
+                    ./img_respons/team/tarasov-mob/img@2x.jpg 2x
+                  "
+                  media="(max-widht: 767px)"
+                />
+                <img
+                  src="./img_respons/team/tarasov-mob/img.jpg"
+                  alt="Николай Тарасов"
+                  width="450"
+                />
+              </picture>
+
               <h3 class="names">Николай Тарасов</h3>
               <p class="main-text">Marketing</p>
               <ul class="list team-social-link-list">
@@ -312,7 +394,36 @@
               </ul>
             </li>
             <li class="person-list">
-              <img src="./img/ermakov.jpg" alt="Михаил Ермаков" width="270" />
+              <picture>
+                <source
+                  srcset="
+                    ./img_respons/team/ermakov-desk/img.jpg    1x,
+                    ./img_respons/team/ermakov-desk/img@2x.jpg 2x
+                  "
+                  media="(min-widht: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./img_respons/team/ermakov-tab/img.jpg    1x,
+                    ./img_respons/team/ermakov-tab/img@2x.jpg 2x
+                  "
+                  media="(min-widht: 768px)"
+                />
+
+                <source
+                  srcset="
+                    ./img_respons/team/ermakov-mob/img.jpg    1x,
+                    ./img_respons/team/ermakov-mob/img@2x.jpg 2x
+                  "
+                  media="(max-widht: 767px)"
+                />
+                <img
+                  src="./img_respons/team/ermakov-mob/img.jpg"
+                  alt="Михаил Ермаков"
+                  width="450"
+                />
+              </picture>
+
               <h3 class="names">Михаил Ермаков</h3>
               <p class="main-text">UI Designer</p>
               <ul class="list team-social-link-list">

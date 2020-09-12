@@ -463,6 +463,12 @@ p {
   padding: 0;
 }
 
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 .logo-header, .logo-footer, .logo-web {
   font-family: Raleway, sans-serif;
   font-style: normal;
@@ -626,8 +632,20 @@ p {
   box-shadow: none;
 }
 
+@media (min-width: 1200px) {
+  .projects-list-item {
+    margin-right: 30px;
+  }
+}
+
 .projects-list-item:not(:last-child) {
   margin-bottom: 30px;
+}
+
+@media (min-width: 1200px) {
+  .projects-list-item:not(:last-child) {
+    margin-bottom: 0;
+  }
 }
 
 @media (min-width: 768px) {
@@ -1208,7 +1226,7 @@ p {
 @media (min-width: 1200px) {
   .footer-div {
     text-align: left;
-    margin-right: 90px;
+    margin-right: 80px;
   }
 }
 
