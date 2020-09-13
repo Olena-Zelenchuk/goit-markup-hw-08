@@ -80,7 +80,15 @@
 }
 
 .text-portfolio-box {
-  padding: 63px 24px;
+  padding: 63px 0;
+
+  @include for-size(phone-only) {
+    padding: 45px 0;
+  }
+
+  @include for-size(tablet-portrait) {
+    padding: 45px 0;
+  }
 
   position: absolute;
   top: 0;
