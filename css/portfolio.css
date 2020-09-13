@@ -701,6 +701,7 @@ img {
 
 .text-portfolio-box {
   padding: 63px 0;
+  height: 100%;
   position: absolute;
   top: 0;
   left: 0;

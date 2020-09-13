@@ -81,6 +81,7 @@
 
 .text-portfolio-box {
   padding: 63px 0;
+  height: 100%;
 
   @include for-size(phone-only) {
     padding: 45px 0;
