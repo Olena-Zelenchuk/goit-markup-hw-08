@@ -85,10 +85,12 @@
 
   @include for-size(phone-only) {
     padding: 45px 0;
+    font-size: 16px;
   }
 
   @include for-size(tablet-portrait) {
     padding: 45px 0;
+    font-size: 16px;
   }
 
   position: absolute;

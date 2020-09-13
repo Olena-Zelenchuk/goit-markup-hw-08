@@ -720,12 +720,14 @@ img {
 @media (max-width: 479px) {
   .text-portfolio-box {
     padding: 45px 0;
+    font-size: 16px;
   }
 }
 
 @media (min-width: 480px) {
   .text-portfolio-box {
     padding: 45px 0;
+    font-size: 16px;
   }
 }
 
